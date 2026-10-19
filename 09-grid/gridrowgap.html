@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Thực hành] CSS | grid-row-gap Property</title>
+    <link rel="stylesheet" href="gridrowgap.css">
+</head>
+<body>
+
+    <h1>[Thực hành] CSS | grid-row-gap Property</h1>
+
+    <!-- 1. Length -->
+    <div class="example">
+        <h3>1. Giá trị Length (<code>grid-row-gap: 20px;</code>)</h3>
+        <p>Khoảng cách giữa các hàng cố định là 20px:</p>
+        <div class="grid-container grid-length">
+            <div>Ô 1</div>
+            <div>Ô 2</div>
+            <div>Ô 3</div>
+            <div>Ô 4</div>
+        </div>
+    </div>
+
+    <!-- 2. Percentage (%) -->
+    <div class="example">
+        <h3>2. Giá trị Phần trăm (<code>grid-row-gap: 5%;</code> - height: 350px)</h3>
+        <p>Khoảng cách giữa các hàng tính theo 5% chiều cao container:</p>
+        <div class="grid-container grid-percent">
+            <div>Ô 1</div>
+            <div>Ô 2</div>
+            <div>Ô 3</div>
+            <div>Ô 4</div>
+        </div>
+    </div>
+
+    <!-- 3. Global values -->
+    <div class="example">
+        <h3>3. Giá trị toàn cục (Global values)</h3>
+        
+        <p><strong>3.1 Giá trị <code>initial</code> (quay về mặc định: 0px):</strong></p>
+        <div class="grid-container grid-initial">
+            <div>Ô 1</div>
+            <div>Ô 2</div>
+            <div>Ô 3</div>
+            <div>Ô 4</div>
+        </div>
+
+        <p style="margin-top: 20px;"><strong>3.2 Giá trị <code>inherit</code> (kế thừa khoảng cách 35px từ container cha):</strong></p>
+        <div class="parent-container">
+            <div class="grid-container grid-inherit">
+                <div>Ô 1</div>
+                <div>Ô 2</div>
+                <div>Ô 3</div>
+                <div>Ô 4</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
