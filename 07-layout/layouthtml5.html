@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo layout với HTML5 và CSS</title>
+    <link rel="stylesheet" href="layouthtml5.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Trang Web HTML5 Semantic</h1>
+            <p>Xây dựng bố cục hiện đại với các thẻ ngữ nghĩa của HTML5</p>
+        </header>
+
+        <!-- Nav -->
+        <nav>
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Khóa học</a></li>
+                <li><a href="#">Tin tức</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </nav>
+
+        <!-- Section chứa Article và Aside -->
+        <section class="main-body">
+            <article>
+                <h2>Bài viết chính: Ưu điểm của thẻ HTML5 Semantic</h2>
+                <p>Trước khi có HTML5, các nhà phát triển web chủ yếu sử dụng thẻ <code>&lt;div&gt;</code> với các class và id khác nhau để chia bố cục. Việc này khiến cấu trúc code trở nên khó đọc và khó hiểu cho cả lập trình viên lẫn các công cụ tìm kiếm.</p>
+                <p>Với HTML5, các thẻ ngữ nghĩa như <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code>, và <code>&lt;footer&gt;</code> giúp trình duyệt và bot tìm kiếm (SEO) hiểu chính xác vai trò của từng vùng nội dung trên trang web.</p>
+            </article>
+
+            <aside>
+                <h3>Chuyên mục phụ (Aside)</h3>
+                <ul>
+                    <li><a href="#">Tài liệu HTML5</a></li>
+                    <li><a href="#">Hướng dẫn CSS3</a></li>
+                    <li><a href="#">Thiết kế Responsive</a></li>
+                    <li><a href="#">Thực hành Flexbox</a></li>
+                </ul>
+            </aside>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 Bản quyền thuộc về CodeGym. Tất cả các quyền được bảo lưu.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
