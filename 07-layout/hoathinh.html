@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thế Giới Hoạt Hình Trực Tuyến</title>
+    <link rel="stylesheet" href="hoathinh.css">
+</head>
+<body>
+
+    <!-- Header cố định -->
+    <header class="header">
+        <div class="logo">
+            <a href="#">🎬 Hoạt Hình Kids</a>
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="Tìm kiếm phim hoạt hình...">
+            <button type="button">Tìm</button>
+        </div>
+        <nav class="head-link">
+            <a href="#">Trang chủ</a>
+            <a href="#">Mới cập nhật</a>
+            <a href="#">Xem nhiều nhất</a>
+            <a href="#">Thuyết minh</a>
+        </nav>
+    </header>
+
+    <!-- Thân trang (Content) -->
+    <div class="container">
+        
+        <!-- Left Content: Danh sách video -->
+        <aside class="left-content">
+            <h3>Danh Sách Phim</h3>
+            <ul class="video-list">
+                <li class="active">
+                    <a href="#">
+                        <span class="video-title">1. Doraemon - Mèo máy thông minh</span>
+                        <span class="badge">1080p</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="video-title">2. Tom & Jerry - Cuộc rượt đuổi</span>
+                        <span class="badge">720p</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="video-title">3. Thám tử lừng danh Conan</span>
+                        <span class="badge">1080p</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="video-title">4. Vua Sư Tử (The Lion King)</span>
+                        <span class="badge">1080p</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="video-title">5. Kỷ Băng Hà (Ice Age)</span>
+                        <span class="badge">720p</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Right Content: Khu vực xem video -->
+        <main class="right-content">
+            <div class="video-player">
+                <h2>Doraemon: Chú mèo máy đến từ tương lai (Tập 1 - Thuyết Minh)</h2>
+                
+                <!-- Nhúng video YouTube bằng iframe -->
+                <div class="iframe-container">
+                    <iframe 
+                        width="100%" 
+                        height="400" 
+                        src="https://www.youtube.com/embed/jfKfPfyJRdk" 
+                        title="Doraemon Video Player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <div class="video-info">
+                    <p><strong>Chất lượng:</strong> FullHD 1080p | <strong>Ngôn ngữ:</strong> Thuyết minh Tiếng Việt | <strong>Độ tuổi:</strong> Phù hợp cho mọi lứa tuổi</p>
+                    <p><strong>Nội dung:</strong> Câu chuyện về chú mèo máy Doraemon đến từ thế kỷ 22 để giúp đỡ cậu bé Nobita hậu đậu nhưng giàu lòng nhân ái vượt qua các thử thách trong cuộc sống hàng ngày bằng những bảo bối kỳ diệu.</p>
+                </div>
+
+                <!-- Minh họa sử dụng thẻ <video> HTML5 -->
+                <div class="html5-video-section">
+                    <h3>Xem clip ngắn hoạt hình mẫu (Thẻ HTML5 &lt;video&gt;):</h3>
+                    <video controls width="100%">
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        Trình duyệt của bạn không hỗ trợ thẻ video.
+                    </video>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Thế Giới Hoạt Hình Trực Tuyến - Kênh giải trí lành mạnh và an toàn cho trẻ nhỏ.</p>
+        <p>Tất cả nội dung được kiểm duyệt và thuyết minh chất lượng cao.</p>
+    </footer>
+
+</body>
+</html>
