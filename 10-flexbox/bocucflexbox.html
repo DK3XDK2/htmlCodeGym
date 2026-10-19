@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <link rel="stylesheet" href="bocucflexbox.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Header - Tiêu đề Website</h1>
+        </header>
+
+        <nav class="nav">
+            <a href="#">Trang chủ</a>
+            <a href="#">Giới thiệu</a>
+            <a href="#">Dịch vụ</a>
+            <a href="#">Liên hệ</a>
+        </nav>
+
+        <div class="main-container">
+            <main class="content">
+                <h2>Nội dung chính (Main Content)</h2>
+                <p>Đây là khu vực hiển thị nội dung chính của trang web. Bố cục này được thiết lập bằng CSS Flexbox linh hoạt.</p>
+                <p>Thuộc tính <code>flex: 3;</code> cho phép phần nội dung chính chiếm 3 phần không gian, trong khi Sidebar chỉ chiếm 1 phần (<code>flex: 1;</code>).</p>
+                <p>Trên màn hình thiết bị di động (Mobile &lt;= 768px), Media Query sẽ chuyển <code>flex-direction: column;</code> giúp Sidebar xếp xuống phía dưới Content một cách tự nhiên và gọn gàng.</p>
+            </main>
+            <aside class="sidebar">
+                <h3>Sidebar (Nội dung phụ)</h3>
+                <ul>
+                    <li>Tin tức công nghệ mới</li>
+                    <li>Khóa học lập trình Front-end</li>
+                    <li>Sự kiện workshop cuối tuần</li>
+                </ul>
+            </aside>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2026 Flexbox Layout. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
