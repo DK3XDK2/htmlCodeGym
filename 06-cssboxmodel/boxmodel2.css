@@ -1,0 +1,96 @@
+html, body, h1, h2, h3, h4, ul, ol, li, p, a {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 600px;
+  margin: 30px auto;
+  padding: 25px;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+}
+
+h1 {
+  color: #000000;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  color: #000000;
+  font-size: 22px;
+  margin-top: 25px;
+  margin-bottom: 12px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #333333;
+}
+
+h3 {
+  color: #333333;
+  font-size: 16px;
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
+p {
+  color: #444444;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+a {
+  color: #440000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.nav, ul:first-of-type {
+  list-style: none;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+}
+
+.nav li, ul:first-of-type li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.nav a, ul:first-of-type a {
+  font-weight: bold;
+}
+
+.members, ul:nth-of-type(2) {
+  list-style-type: disc;
+  padding-left: 25px;
+  margin-bottom: 15px;
+}
+
+.members li, ul:nth-of-type(2) li {
+  margin-bottom: 5px;
+  color: #444444;
+}
+
+.tour-dates, ul:last-of-type {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.tour-dates li, ul:last-of-type li {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-left: 4px solid #440000;
+  background-color: #f9f9f9;
+}
+
+.tour-dates li p, ul:last-of-type li p {
+  margin-bottom: 4px;
+}
