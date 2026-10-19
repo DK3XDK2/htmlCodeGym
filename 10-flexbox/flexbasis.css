@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f6f8;
+    color: #333333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+.example {
+    background-color: #ffffff;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.example h3 {
+    margin-bottom: 8px;
+    color: #2b6cb0;
+}
+
+.example p {
+    margin-bottom: 15px;
+    color: #555555;
+    font-size: 14px;
+}
+
+.example code {
+    background-color: #edf2f7;
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: #c53030;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    background-color: #edf2f7;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px dashed #cbd5e0;
+}
+
+.item {
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ví dụ 1 */
+.ex1-container .item {
+    background-color: lightblue;
+    border: 1px solid #90cdf4;
+}
+
+.ex1-container .item1 {
+    flex-basis: 200px;
+}
+
+.ex1-container .item2 {
+    flex-basis: 100px;
+}
+
+.ex1-container .item3 {
+    flex-basis: 150px;
+}
+
+/* Ví dụ 2 */
+.ex2-container {
+    flex-direction: column;
+    height: 400px;
+}
+
+.ex2-container .item {
+    flex-basis: 100px;
+    background-color: lightgreen;
+    border: 1px solid #9ae6b4;
+}
+
+/* Ví dụ 3 */
+.ex3-container .item {
+    flex-basis: 50%;
+    background-color: lightcoral;
+    color: white;
+    border: 1px solid #feb2b2;
+}
+
+/* Ví dụ 4 */
+.ex4-container {
+    max-width: 650px;
+}
+
+.ex4-container .item {
+    background-color: #bee3f8;
+    color: #2b6cb0;
+    border: 1px solid #90cdf4;
+}
+
+.ex4-item1 {
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+
+.ex4-item2 {
+    flex-basis: 100px;
+    flex-grow: 2;
+    background-color: #90cdf4 !important;
+}
+
+.ex4-item3 {
+    flex-basis: 100px;
+    flex-grow: 1;
+}

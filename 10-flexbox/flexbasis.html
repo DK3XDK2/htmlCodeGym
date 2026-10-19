@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Thực hành] CSS | flex-basis Property</title>
+    <link rel="stylesheet" href="flexbasis.css">
+</head>
+<body>
+
+    <h1>[Thực hành] CSS | flex-basis Property</h1>
+
+    <!-- Ví dụ 1: flex-basis với đơn vị px (row) -->
+    <div class="example">
+        <h3>Ví dụ 1: Sử dụng <code>flex-basis</code> với đơn vị px (flex-direction: row)</h3>
+        <p>Item 1 (200px), Item 2 (100px), Item 3 (150px) xác định kích thước theo chiều ngang:</p>
+        <div class="container ex1-container">
+            <div class="item item1">Item 1 (200px)</div>
+            <div class="item item2">Item 2 (100px)</div>
+            <div class="item item3">Item 3 (150px)</div>
+        </div>
+    </div>
+
+    <!-- Ví dụ 2: flex-basis với flex-direction: column -->
+    <div class="example">
+        <h3>Ví dụ 2: <code>flex-basis</code> thay đổi theo <code>flex-direction: column</code></h3>
+        <p>Main Axis chuyển thành chiều dọc, <code>flex-basis: 100px;</code> xác định chiều cao:</p>
+        <div class="container ex2-container">
+            <div class="item">Item 1 (cao 100px)</div>
+            <div class="item">Item 2 (cao 100px)</div>
+            <div class="item">Item 3 (cao 100px)</div>
+        </div>
+    </div>
+
+    <!-- Ví dụ 3: flex-basis với % -->
+    <div class="example">
+        <h3>Ví dụ 3: <code>flex-basis</code> với phần trăm (<code>flex-basis: 50%;</code>)</h3>
+        <p>Mỗi Item chiếm 50% độ rộng của container:</p>
+        <div class="container ex3-container">
+            <div class="item">Item 1 (50%)</div>
+            <div class="item">Item 2 (50%)</div>
+        </div>
+    </div>
+
+    <!-- Ví dụ 4: Kết hợp flex-basis với flex-grow -->
+    <div class="example">
+        <h3>Ví dụ 4: Kết hợp <code>flex-basis</code> với <code>flex-grow</code></h3>
+        <p>Kích thước cơ sở 100px, phần không gian còn lại phân chia theo tỷ lệ grow 1 : 2 : 1:</p>
+        <div class="container ex4-container">
+            <div class="item ex4-item1">Item 1 (grow: 1)</div>
+            <div class="item ex4-item2">Item 2 (grow: 2)</div>
+            <div class="item ex4-item3">Item 3 (grow: 1)</div>
+        </div>
+    </div>
+
+</body>
+</html>
