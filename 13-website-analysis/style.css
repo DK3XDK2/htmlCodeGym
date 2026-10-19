@@ -1,0 +1,211 @@
+/* Reset CSS cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Tahoma, sans-serif;
+    line-height: 1.6;
+    background-color: #f7f9fa;
+    color: #333333;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* 1. Header */
+.header {
+    background-color: #ffffff;
+    border-bottom: 2px solid #e1e8ed;
+    padding: 20px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 2rem;
+    color: #b71c1c;
+    letter-spacing: 1px;
+}
+
+.logo .tagline {
+    font-size: 0.9rem;
+    color: #666666;
+}
+
+.header-date {
+    font-size: 0.9rem;
+    color: #777777;
+    font-style: italic;
+}
+
+/* 2. Navigation Menu */
+.navbar {
+    background-color: #b71c1c;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-weight: bold;
+    font-size: 0.95rem;
+    transition: background-color 0.2s;
+}
+
+.nav-list li a:hover,
+.nav-list li a.active {
+    background-color: #8e0000;
+}
+
+/* 3. Content Section */
+.content-wrapper {
+    display: flex;
+    gap: 25px;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.main-content {
+    flex: 7;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.post h2 {
+    font-size: 1.8rem;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.post-meta {
+    font-size: 0.85rem;
+    color: #888888;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 8px;
+}
+
+.featured-image {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.post p {
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+    color: #444444;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 3;
+}
+
+.widget {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.widget h3 {
+    font-size: 1.2rem;
+    color: #b71c1c;
+    border-bottom: 2px solid #b71c1c;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.widget-list {
+    list-style: none;
+}
+
+.widget-list li {
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #e1e8ed;
+}
+
+.widget-list li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.widget-list li a {
+    color: #333333;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+.widget-list li a:hover {
+    color: #b71c1c;
+}
+
+/* 4. Footer */
+.footer {
+    background-color: #222222;
+    color: #cccccc;
+    padding: 25px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 3px solid #b71c1c;
+}
+
+.footer-container p {
+    margin-bottom: 6px;
+}
+
+/* Responsive Media Queries cho Mobile */
+@media screen and (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+    }
+
+    .nav-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-list li a {
+        padding: 10px 14px;
+        font-size: 0.9rem;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .main-content,
+    .sidebar {
+        width: 100%;
+    }
+}
