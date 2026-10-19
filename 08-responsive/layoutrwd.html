@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo layout với RWD</title>
+    <link rel="stylesheet" href="layoutrwd.css">
+</head>
+<body>
+
+    <div id="main">
+        <!-- Header -->
+        <div id="head">
+            <h1>Header / Banner Logo</h1>
+        </div>
+
+        <!-- Navigation Menu -->
+        <div id="head-link">
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Học viên</a></li>
+                <li><a href="#">Khóa học</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Body Wrapper -->
+        <div id="wrapper">
+            <!-- Left Sidebar -->
+            <div id="left">
+                <h3>Menu Trái</h3>
+                <ul>
+                    <li><a href="#">Chương trình đào tạo</a></li>
+                    <li><a href="#">Lịch khai giảng</a></li>
+                    <li><a href="#">Tài liệu học tập</a></li>
+                    <li><a href="#">Diễn đàn thảo luận</a></li>
+                </ul>
+            </div>
+
+            <!-- Content Area -->
+            <div id="content">
+                <h2>Nội dung chính (Main Content)</h2>
+                <p>Trang web này được xây dựng bằng thẻ <code>&lt;div&gt;</code> và CSS kết hợp kỹ thuật <strong>Responsive Web Design (RWD)</strong>.</p>
+                <p>Trên màn hình máy tính để bàn (Desktop), bố cục hiển thị đầy đủ 3 cột: Cột trái (Menu phụ), Cột giữa (Nội dung chính) và Cột phải (Sidebar bổ trợ).</p>
+                <p>Khi thu nhỏ kích thước màn hình trên máy tính bảng (Tablet) hoặc điện thoại di động (Mobile), các cột sẽ tự động sắp xếp lại một cách hợp lý và gọn gàng, không bị tràn màn hình.</p>
+            </div>
+
+            <!-- Right Sidebar -->
+            <div id="right">
+                <h3>Thông tin phụ</h3>
+                <p><strong>Hotline:</strong> 0987 654 321</p>
+                <p><strong>Địa chỉ:</strong> Hà Nội, Việt Nam</p>
+                <p><strong>Thông báo:</strong> Lớp học mới sẽ bắt đầu vào tuần tới.</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer">
+            <p>&copy; 2026 CodeGym. Bản quyền thuộc về bạn. All rights reserved.</p>
+        </div>
+    </div>
+
+</body>
+</html>
