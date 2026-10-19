@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2c3e50;
+}
+
+.example {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.example h3 {
+    margin-bottom: 15px;
+    color: #2b6cb0;
+}
+
+.example code {
+    background-color: #edf2f7;
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: #c53030;
+}
+
+.grid-container {
+    display: grid;
+    background-color: #edf2f7;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px dashed #cbd5e0;
+}
+
+/* Ví dụ 1: grid-gap: 20px */
+.grid-equal {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    gap: 20px;
+}
+
+.grid-equal div {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    border: 1px solid #90cdf4;
+}
+
+/* Ví dụ 2: grid-gap: 30px 10px */
+.grid-different {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px 10px;
+    gap: 30px 10px;
+}
+
+.grid-different div {
+    background-color: lightgreen;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    border: 1px solid #9ae6b4;
+}
