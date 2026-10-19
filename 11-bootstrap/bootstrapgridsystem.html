@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiết kế Trang Web với Bootstrap Grid System</title>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="d-flex flex-column min-vh-100 bg-light">
+
+    <!-- 1. Header: Chứa tiêu đề trang web -->
+    <header class="bg-primary text-white text-center py-4 shadow-sm">
+        <div class="container">
+            <h1 class="fw-bold">Tiêu Đề Trang Web</h1>
+            <p class="lead mb-0">Học cách làm chủ Bootstrap Grid System và Containers</p>
+        </div>
+    </header>
+
+    <!-- 2. Navbar: Menu điều hướng với Bootstrap Navbar có dropdown -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">BootstrapGrid</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Khóa học
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">HTML & CSS cơ bản</a></li>
+                            <li><a class="dropdown-item" href="#">Bootstrap 5 chuyên sâu</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">JavaScript toàn diện</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 3. Main Layout: Chia layout bằng Bootstrap Containers và Grid System -->
+    <div class="container my-5 flex-grow-1">
+        <div class="row g-4">
+            <!-- Main Content: col-lg-8 (≥992px) và col-12 (<992px) -->
+            <main class="col-12 col-lg-8">
+                <article class="p-4 bg-white rounded-3 shadow-sm border">
+                    <h2 class="h3 fw-bold text-primary mb-3">Nội dung chính (Main Content)</h2>
+                    <p class="text-muted">Bootstrap Grid System được xây dựng dựa trên hệ thống 12 cột linh hoạt của Flexbox, giúp tạo nên giao diện tự động thích ứng với nhiều kích cỡ màn hình khác nhau từ điện thoại, máy tính bảng đến máy tính để bàn.</p>
+                    <p>Trên màn hình lớn (Desktop &ge; 992px), khu vực này chiếm <strong>8 cột (col-lg-8)</strong>, tạo không gian rộng rãi để trình bày bài viết, hình ảnh hoặc các bài học chi tiết.</p>
+                    <p>Khi người dùng xem trên thiết bị di động (&lt; 992px), cột này sẽ tự động mở rộng toàn màn hình thành <strong>12 cột (col-12)</strong>, đảm bảo người dùng có thể đọc văn bản dễ dàng mà không bị co kéo hay vỡ giao diện.</p>
+                    <div class="alert alert-info mt-4 mb-0" role="alert">
+                        <strong>Mẹo hay:</strong> Sử dụng các lớp <code>container</code>, <code>row</code>, và <code>col-*</code> theo đúng thứ tự phân cấp là chìa khóa để Grid System hoạt động hoàn hảo.
+                    </div>
+                </article>
+            </main>
+
+            <!-- Sidebar: col-lg-4 (≥992px) và col-12 (<992px) -->
+            <aside class="col-12 col-lg-4">
+                <div class="p-4 bg-white rounded-3 shadow-sm border mb-4">
+                    <h3 class="h4 fw-bold text-dark mb-3">Thông tin phụ (Sidebar)</h3>
+                    <p class="text-muted small">Cột sidebar hiển thị nội dung bổ trợ, danh mục nhanh hoặc thông báo mới.</p>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                            Bài viết mới nhất
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">Kỹ thuật Flexbox & Grid</a>
+                        <a href="#" class="list-group-item list-group-item-action">Tối ưu tốc độ tải trang</a>
+                        <a href="#" class="list-group-item list-group-item-action">Responsive Web Design</a>
+                    </div>
+                </div>
+
+                <div class="p-4 bg-white rounded-3 shadow-sm border text-center">
+                    <h4 class="h5 fw-bold text-success mb-2">Đăng ký bản tin</h4>
+                    <p class="text-muted small mb-3">Nhận thông báo về các bài học mới nhất qua email.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Nhập email...">
+                        <button class="btn btn-primary" type="button">Gửi</button>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <!-- 4. Footer: Chứa thông tin bản quyền -->
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 CodeGym. Bản quyền thuộc về bạn. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
