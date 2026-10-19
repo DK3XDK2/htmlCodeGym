@@ -1,0 +1,12 @@
+// _mixins.scss
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin border-radius($radius: 4px) {
+  border-radius: $radius;
+}
