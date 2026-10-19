@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Thực hành] CSS | flex-grow Property</title>
+    <link rel="stylesheet" href="flexgrow.css">
+</head>
+<body>
+
+    <h1>[Thực hành] CSS | flex-grow Property</h1>
+
+    <!-- Ví dụ chính theo đề bài: 5 Div, áp dụng flex-grow trên Div thứ 2 -->
+    <div class="example">
+        <h3>Ví dụ chính: Vùng chứa gồm 5 div, Div thứ 2 áp dụng <code>flex-grow: 3;</code></h3>
+        <p>Div thứ 2 phát triển mạnh hơn hẳn so với 4 div còn lại:</p>
+        <div class="container ex1">
+            <div class="item">Div 1</div>
+            <div class="item special">Div 2 (flex-grow: 3)</div>
+            <div class="item">Div 3</div>
+            <div class="item">Div 4</div>
+            <div class="item">Div 5</div>
+        </div>
+    </div>
+
+    <!-- Ví dụ so sánh: Tỷ lệ flex-grow đồng đều vs khác nhau -->
+    <div class="example">
+        <h3>Ví dụ mở rộng 1: Tất cả các div đều có <code>flex-grow: 1;</code> (chia đều không gian)</h3>
+        <div class="container ex2">
+            <div class="item">Div 1 (1)</div>
+            <div class="item">Div 2 (1)</div>
+            <div class="item">Div 3 (1)</div>
+            <div class="item">Div 4 (1)</div>
+            <div class="item">Div 5 (1)</div>
+        </div>
+    </div>
+
+    <!-- Ví dụ mở rộng 2: Các giá trị toàn cục initial và inherit -->
+    <div class="example">
+        <h3>Ví dụ mở rộng 2: Giá trị <code>initial</code> (mặc định = 0, không phát triển)</h3>
+        <div class="container ex3">
+            <div class="item">Div 1 (0)</div>
+            <div class="item initial-item">Div 2 (initial: 0)</div>
+            <div class="item grow-item">Div 3 (flex-grow: 1)</div>
+            <div class="item">Div 4 (0)</div>
+            <div class="item">Div 5 (0)</div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f6f8;
+    color: #333333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+.example {
+    background-color: #ffffff;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.example h3 {
+    margin-bottom: 8px;
+    color: #2b6cb0;
+}
+
+.example p {
+    margin-bottom: 15px;
+    color: #555555;
+    font-size: 14px;
+}
+
+.example code {
+    background-color: #edf2f7;
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: #c53030;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    background-color: #edf2f7;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px dashed #cbd5e0;
+    width: 100%;
+}
+
+.item {
+    padding: 20px 15px;
+    background-color: #bee3f8;
+    color: #2b6cb0;
+    border: 1px solid #90cdf4;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+/* Ví dụ 1: 5 Div, Div thứ 2 áp dụng flex-grow: 3 */
+.ex1 .item {
+    flex-grow: 1;
+}
+
+.ex1 .special {
+    flex-grow: 3;
+    background-color: #48bb78;
+    color: #ffffff;
+    border-color: #38a169;
+}
+
+/* Ví dụ 2: Tất cả chia đều flex-grow: 1 */
+.ex2 .item {
+    flex-grow: 1;
+    background-color: #c6f6d5;
+    color: #22543d;
+    border-color: #9ae6b4;
+}
+
+/* Ví dụ 3: initial (0) so với flex-grow: 1 */
+.ex3 .item {
+    width: 100px;
+}
+
+.ex3 .initial-item {
+    flex-grow: initial; /* giá trị mặc định = 0 */
+    background-color: #fed7d7;
+    color: #9b2c2c;
+    border-color: #feb2b2;
+}
+
+.ex3 .grow-item {
+    flex-grow: 1;
+    background-color: #feebc8;
+    color: #7b341e;
+    border-color: #fbd38d;
+}
