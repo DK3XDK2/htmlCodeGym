@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bố cục responsive bằng CSS Flexbox</title>
+    <link rel="stylesheet" href="bocucresponsiveflexbox.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Tiêu đề Trang Web (Header)</h1>
+            <p>Xây dựng giao diện web thích ứng linh hoạt với CSS Flexbox</p>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Khóa học</a></li>
+                <li><a href="#">Bài viết</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Body Wrapper -->
+        <div class="content-wrapper">
+            <!-- Main Content -->
+            <main class="content">
+                <h2>Nội dung chính (Main Content)</h2>
+                <p>Trang web này được xây dựng hoàn toàn bằng kỹ thuật <strong>CSS Flexbox</strong> và chuẩn <strong>Responsive Web Design (RWD)</strong>.</p>
+                <p>Flexbox giúp căn chỉnh các phần tử linh hoạt trên trục chính (main axis) và trục phụ (cross axis) mà không cần phải dùng kỹ thuật Float hay Clear cũ.</p>
+                <p>Trên Desktop, phần nội dung chính chiếm không gian lớn (<code>flex: 3</code>), đứng cạnh Sidebar bổ trợ (<code>flex: 1</code>). Khi thu nhỏ trên thiết bị di động, các khối sẽ tự động xếp chồng theo chiều dọc một cách tối ưu.</p>
+            </main>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <h3>Nội dung phụ (Sidebar)</h3>
+                <div class="widget">
+                    <h4>Chủ đề nổi bật</h4>
+                    <ul>
+                        <li><a href="#">Hướng dẫn học Flexbox từ A-Z</a></li>
+                        <li><a href="#">Bí quyết Responsive Web Design</a></li>
+                        <li><a href="#">Khóa học lập trình Fullstack</a></li>
+                    </ul>
+                </div>
+                <div class="widget banner">
+                    <p>Khối quảng cáo / Thông tin liên hệ</p>
+                </div>
+            </aside>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2026 Bản quyền thuộc về CodeGym. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>

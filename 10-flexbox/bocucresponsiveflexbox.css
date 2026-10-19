@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333333;
+}
+
+/* Toàn bộ bố cục sử dụng Flexbox */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.header h1 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.header p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Navigation */
+.nav {
+    background-color: #1a252f;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav ul li a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 14px 22px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.nav ul li a:hover {
+    background-color: #2a5298;
+}
+
+/* Wrapper chứa Content và Sidebar */
+.content-wrapper {
+    display: flex;
+    flex: 1;
+    background-color: #ffffff;
+}
+
+/* Main Content */
+.content {
+    flex: 3;
+    padding: 35px 30px;
+}
+
+.content h2 {
+    color: #1e3c72;
+    margin-bottom: 18px;
+    border-bottom: 2px solid #e1e8ed;
+    padding-bottom: 8px;
+}
+
+.content p {
+    margin-bottom: 16px;
+    font-size: 1.05rem;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+    background-color: #f4f6f8;
+    padding: 35px 25px;
+    border-left: 1px solid #e1e8ed;
+}
+
+.sidebar h3 {
+    margin-bottom: 15px;
+    color: #1e3c72;
+    border-bottom: 2px solid #2a5298;
+    padding-bottom: 5px;
+}
+
+.sidebar .widget {
+    margin-bottom: 25px;
+}
+
+.sidebar .widget h4 {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: #2a5298;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+.banner {
+    background-color: #e8f0fe;
+    border: 2px dashed #a4c2f4;
+    padding: 25px 15px;
+    text-align: center;
+    border-radius: 6px;
+    color: #1a73e8;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    background-color: #1a252f;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.95rem;
+}
+
+/* =====================================
+   RESPONSIVE CHO MOBILE (Media Queries)
+   ===================================== */
+@media screen and (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        border-left: none;
+        border-top: 1px solid #e1e8ed;
+    }
+
+    .nav ul {
+        flex-direction: column;
+    }
+
+    .nav ul li a {
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+}
