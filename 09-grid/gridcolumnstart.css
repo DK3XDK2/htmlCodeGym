@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+.example {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.example h3 {
+    margin-bottom: 15px;
+    color: #34495e;
+}
+
+.example code {
+    background-color: #edf2f7;
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: #e53e3e;
+}
+
+.grid-container {
+    display: grid;
+    gap: 10px;
+    background-color: #edf2f7;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.grid-container div {
+    background-color: #4299e1;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+/* 1. auto */
+.grid-auto {
+    grid-template-columns: 100px 100px 100px;
+}
+
+.grid-auto .item1 {
+    grid-column-start: auto;
+    background-color: #ed8936;
+}
+
+/* 2. span n */
+.grid-span {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-span .item1 {
+    grid-column-start: span 2;
+    background-color: #48bb78;
+}
+
+/* 3. column-line */
+.grid-line {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-line .item1 {
+    grid-column-start: 2;
+    background-color: #9f7aea;
+}

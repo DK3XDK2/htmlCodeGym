@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Thực hành] CSS | grid-column-start Property</title>
+    <link rel="stylesheet" href="gridcolumnstart.css">
+</head>
+<body>
+
+    <h1>[Thực hành] CSS | grid-column-start Property</h1>
+
+    <!-- Ví dụ 1: auto -->
+    <div class="example">
+        <h3>1. Giá trị <code>auto</code> (vị trí mặc định)</h3>
+        <div class="grid-container grid-auto">
+            <div class="item1">1 (auto)</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+    </div>
+
+    <!-- Ví dụ 2: span n -->
+    <div class="example">
+        <h3>2. Giá trị <code>span 2</code> (kéo dài qua 2 cột)</h3>
+        <div class="grid-container grid-span">
+            <div class="item1">Item 1 (span 2)</div>
+            <div>Item 2</div>
+            <div>Item 3</div>
+            <div>Item 4</div>
+        </div>
+    </div>
+
+    <!-- Ví dụ 3: column-line -->
+    <div class="example">
+        <h3>3. Giá trị <code>column-line: 2</code> (bắt đầu tại đường kẻ 2)</h3>
+        <div class="grid-container grid-line">
+            <div class="item1">Item 1 (line 2)</div>
+            <div>Item 2</div>
+            <div>Item 3</div>
+            <div>Item 4</div>
+        </div>
+    </div>
+
+</body>
+</html>
