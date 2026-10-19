@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Thực hành] Tạo mixins & biến để tối ưu CSS của website mẫu</title>
+    <!-- CSS đã được tối ưu hóa bằng SASS Mixins và Variables -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Tiêu Đề Lớn (Heading 1)</h1>
+        <h2>Tiêu Đề Phụ (Heading 2)</h2>
+        
+        <div class="card">
+            <h2>Thẻ Thông Tin (Card)</h2>
+            <p>Thẻ này sử dụng mixin <code>@mixin box-style</code> để đóng gói toàn bộ các thuộc tính nền trắng, đổ bóng mềm và bo góc chuẩn.</p>
+            <a href="#" class="button">Nút Hành Động 1</a>
+        </div>
+
+        <div class="card">
+            <h2>Tối Ưu Hóa Với SASS</h2>
+            <p>Việc sử dụng biến (variables) cho kích thước chữ và màu sắc giúp việc thay đổi giao diện trên toàn hệ thống chỉ cần một thao tác cập nhật duy nhất.</p>
+            <button class="button">Nút Hành Động 2</button>
+        </div>
+    </div>
+
+</body>
+</html>

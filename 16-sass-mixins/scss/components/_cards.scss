@@ -1,0 +1,10 @@
+// components/_cards.scss
+.card {
+  @include box-style;
+  margin-bottom: 25px;
+
+  p {
+    color: #555555;
+    margin-bottom: 15px;
+  }
+}
