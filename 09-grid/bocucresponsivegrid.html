@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bố cục responsive bằng CSS Grid</title>
+    <link rel="stylesheet" href="bocucresponsivegrid.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Tiêu đề Trang Web (Header)</h1>
+            <p>Học lập trình Front-end với CSS Grid Layout</p>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Tin tức</a></li>
+                <li><a href="#">Khóa học</a></li>
+                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="content">
+            <h2>Nội dung chính (Main Content)</h2>
+            <p>Đây là khu vực hiển thị nội dung chính của website. CSS Grid giúp chúng ta dễ dàng xây dựng bố cục phức tạp với các hàng và cột linh hoạt.</p>
+            <p>Trên màn hình máy tính (Desktop), giao diện được chia thành các khu vực rõ ràng: Header, Menu điều hướng (Nav), Cột nội dung chính (Content) nằm cạnh Cột bên (Sidebar), và cuối cùng là Chân trang (Footer).</p>
+            <p>Trên màn hình điện thoại di động (Mobile), nhờ thuộc tính Media Queries và <code>grid-template-areas</code>, tất cả các khối sẽ tự động xếp dọc theo thứ tự, giúp người xem không cần phải cuộn ngang.</p>
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h3>Sidebar (Nội dung phụ)</h3>
+            <div class="widget">
+                <h4>Tin mới nhất</h4>
+                <ul>
+                    <li><a href="#">Bí quyết làm chủ CSS Grid</a></li>
+                    <li><a href="#">Thiết kế web chuẩn Responsive</a></li>
+                    <li><a href="#">Kỹ thuật Flexbox nâng cao</a></li>
+                </ul>
+            </div>
+            <div class="widget">
+                <h4>Quảng cáo</h4>
+                <div class="ad-box">Banner Quảng Cáo</div>
+            </div>
+        </aside>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2026 CodeGym. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
