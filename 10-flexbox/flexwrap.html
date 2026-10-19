@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Thực hành] CSS | flex-wrap property</title>
+    <link rel="stylesheet" href="flexwrap.css">
+</head>
+<body>
+
+    <h1>[Thực hành] CSS | flex-wrap property</h1>
+
+    <!-- Bộ điều khiển tương tác (Interactive Demo) -->
+    <div class="interactive-panel">
+        <h3>🎮 Thử nghiệm tương tác (Bấm để đổi giá trị flex-wrap):</h3>
+        <div class="buttons">
+            <button onclick="setFlexWrap('nowrap')" id="btn-nowrap">nowrap</button>
+            <button onclick="setFlexWrap('wrap')" id="btn-wrap" class="active">wrap</button>
+            <button onclick="setFlexWrap('wrap-reverse')" id="btn-wrap-reverse">wrap-reverse</button>
+            <button onclick="setFlexWrap('initial')" id="btn-initial">initial</button>
+        </div>
+        <p>Giá trị hiện tại: <strong id="current-value">flex-wrap: wrap;</strong></p>
+        
+        <div class="container" id="live-container" style="flex-wrap: wrap;">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+        </div>
+    </div>
+
+    <!-- 4 Ví dụ chi tiết cho từng giá trị -->
+    <div class="examples-grid">
+        <!-- 1. wrap -->
+        <div class="example-box">
+            <h3>1. <code>flex-wrap: wrap;</code></h3>
+            <p>Cho phép các Item tự động bọc xuống dòng khi không đủ chỗ.</p>
+            <div class="container wrap-box">
+                <div class="item">Item 1</div>
+                <div class="item">Item 2</div>
+                <div class="item">Item 3</div>
+                <div class="item">Item 4</div>
+                <div class="item">Item 5</div>
+                <div class="item">Item 6</div>
+            </div>
+        </div>
+
+        <!-- 2. nowrap -->
+        <div class="example-box">
+            <h3>2. <code>flex-wrap: nowrap;</code> (Mặc định)</h3>
+            <p>Tất cả Item nằm trên 1 hàng, không cho phép xuống dòng (bị co lại).</p>
+            <div class="container nowrap-box">
+                <div class="item">Item 1</div>
+                <div class="item">Item 2</div>
+                <div class="item">Item 3</div>
+                <div class="item">Item 4</div>
+            </div>
+        </div>
+
+        <!-- 3. wrap-reverse -->
+        <div class="example-box">
+            <h3>3. <code>flex-wrap: wrap-reverse;</code></h3>
+            <p>Cho phép xuống dòng nhưng đảo ngược hướng của Cross Axis.</p>
+            <div class="container wrap-reverse-box">
+                <div class="item">Item 1</div>
+                <div class="item">Item 2</div>
+                <div class="item">Item 3</div>
+                <div class="item">Item 4</div>
+                <div class="item">Item 5</div>
+                <div class="item">Item 6</div>
+            </div>
+        </div>
+
+        <!-- 4. initial -->
+        <div class="example-box">
+            <h3>4. <code>flex-wrap: initial;</code></h3>
+            <p>Đặt thuộc tính về giá trị mặc định của CSS (chính là <code>nowrap</code>).</p>
+            <div class="container initial-box">
+                <div class="item">Item 1</div>
+                <div class="item">Item 2</div>
+                <div class="item">Item 3</div>
+                <div class="item">Item 4</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function setFlexWrap(val) {
+            const container = document.getElementById('live-container');
+            container.style.flexWrap = val;
+            document.getElementById('current-value').innerText = 'flex-wrap: ' + val + ';';
+            
+            document.querySelectorAll('.buttons button').forEach(btn => btn.classList.remove('active'));
+            document.getElementById('btn-' + val).classList.add('active');
+        }
+    </script>
+</body>
+</html>
